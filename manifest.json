@@ -1,0 +1,16 @@
+{
+  "manifest_version": 3,
+  "name": "FakeCheck",
+  "version": "1.0",
+  "description": "AI-powered fake news detection tool",
+  "permissions": ["activeTab", "scripting"],
+  "action": {
+    "default_popup": "popup.html"
+  },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content.js"]
+    }
+  ]
+}
